@@ -24,6 +24,7 @@ return new class extends Migration
                 ->onDelete('cascade');
             $table->integer('qty');
             $table->decimal('price', 10, 2);
+            $table->timestamps();
         });
     }
 
