@@ -8,7 +8,7 @@ class Purchase extends Model
 {
     protected $fillable = ['total'];
 
-    public function purchaseItems()
+    public function purchaseItems(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(PurchaseItem::class);
     }
