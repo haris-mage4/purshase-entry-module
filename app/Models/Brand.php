@@ -8,7 +8,7 @@ class Brand extends Model
 {
     protected $fillable = ['name'];
 
-    public function purchaseItems()
+    public function purchaseItems(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(PurchaseItem::class);
     }
